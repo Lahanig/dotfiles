@@ -74,6 +74,7 @@ backup_and_link ~/dotfiles/OpenTabletDriver ~/.config/OpenTabletDriver
 backup_and_link ~/dotfiles/user-dirs.dirs ~/.config/user-dirs.dirs
 
 backup_and_link ~/dotfiles/wallpapers ~/wallpapers
+backup_and_link ~/dotfiles/scripts ~/scripts
 
 echo
 echo "Done! Dotfiles installed."
