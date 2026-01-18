@@ -75,6 +75,9 @@ backup_and_link ~/dotfiles/user-dirs.dirs ~/.config/user-dirs.dirs
 
 backup_and_link ~/dotfiles/wallpapers ~/wallpapers
 backup_and_link ~/dotfiles/scripts ~/scripts
+backup_and_link ~/dotfiles/.icons ~/.icons
 
 echo
 echo "Done! Dotfiles installed."
+
+./install-pkgs.sh
