@@ -1,0 +1,151 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  
+  "logo": {
+    "type": "auto",
+    "width": 22,
+    "source": "/home/kaibi/wallpapers/zsh/wp3.png",
+    "padding": {
+      "top": 1,
+      "right": 3,
+      "left": 3
+    }
+  },
+  
+  "modules": [
+    {
+      "type": "title",
+      "format": "{user-name}@{host-name}",
+      // "color": "light_blue",
+      "key": " ",
+      "color": {
+        "user": "magenta",
+        "at": "",
+        "host": "magenta"
+      }
+    },
+    "separator",
+    {
+      "type": "os",
+      "key": "",
+      "format": "{name}"
+    },
+    {
+      "type": "host",
+      "key": "󰌢",
+      "format": "{family}"
+    },
+    {
+      "type": "kernel",
+      "key": ""
+    },
+    "break",
+    // {
+    //   "type": "uptime",
+    //   "key": ""
+    // },
+    {
+      "type": "packages",
+      "key": "󰏖",
+      "disabled": [
+        "apk"
+      ],
+      "combined": false
+    },
+    {
+      "type": "shell",
+      "key": "",
+      "format": "{process-name}"
+    },
+    {
+      "type": "de",
+      "key": "",
+      "slowVersionDetection": false
+    },
+    {
+      "type": "wm",
+      "key": "",
+      "detectPlugin": false
+    },
+    "break",
+    {
+      "type": "cpu",
+      "key": "",
+      "format": "{name}"
+    },
+    {
+      "type": "gpu",
+      "key": "󰾲",
+      "format": "{name}"
+    },
+    {
+      "type": "memory",
+      "key": "",
+      "format": "{1} / {2} ({3})"
+      // "showPercentage": true
+    },
+    "break",
+    {
+      "type": "disk",
+      "key": " ({mountpoint})",
+      // "format": "",
+      "folders": "",
+      "hideFS": "",
+      // "path": "/",
+      // "showType": false,
+      "hideFolders": "/efi:/boot:/boot/*",
+      "showReadOnly": true,
+      "showRegular": true,
+      "showExternal": true
+    },
+    "break",
+    {
+      "type": "colors",
+      "key": " ",
+      "keyIcon": "",
+      "symbol": "circle",
+      "paddingLeft": 0,
+      "circle": {
+        "width": 3,
+        "range": [
+          0,
+          7
+        ]
+      }
+    }
+  ],
+  "display": {
+    // "keyWidth": 12,
+    "separator": " -> ",
+    // "keySuffix": " » ",
+    "bar": {
+      // "charElapsed": "█",
+      // "charTotal": "─",
+      // "borderType": "bold",
+      "width": 25,
+      "border": {
+        "left": "[ ",
+        "right": " ]",
+        "leftElapsed": "",
+        "rightElapsed": ""
+      },
+      "char": {
+        "elapsed": "■",
+        "total": "-"
+      }
+    },
+    "size": {
+      "maxPrefix": "YB",
+      "binaryPrefix": "iec",
+      "ndigits": 2,
+      "spaceBeforeUnit": "default"
+    },
+    "fraction": {
+      "ndigits": 2
+    },
+    "freq": {
+      "ndigits": 2,
+      "spaceBeforeUnit": "default"
+    }
+  }
+}

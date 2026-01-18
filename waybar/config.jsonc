@@ -1,0 +1,252 @@
+{
+    // "layer": "top",
+    "position": "top",
+    "mod": "dock",
+    "exclusive": true,
+    "passthrough": false,
+    "gtk-layer-shell": true,
+    "height": 50,
+    // "icon-size": 100,
+    "modules-left": [
+        "clock",
+        // "custom/weather",
+        // "custom/moon",
+        // "custom/wall",
+        "hyprland/workspaces",
+        "backlight",
+        "pulseaudio",
+        // "mpd",
+        "custom/audiomixer",
+        "pulseaudio#microphone"
+    ],
+    "modules-center": [
+        "hyprland/window"
+    ],
+    "modules-right": [
+        "network",
+        //"bluetooth",
+        "hyprland/language",
+        "custom/temperature",
+        "memory",
+        "battery",
+        "tray",
+        "custom/notification"
+    ],
+    "hyprland/workspaces": {
+        "format": "{name}",
+        "on-scroll-up": "hyprctl dispatch workspace e+1",
+        "on-scroll-down": "hyprctl dispatch workspace e-1",
+        "format-icons": {
+            // "1": "😎",
+            // "2": "🌐",
+            // "3": "👩🏽‍💻",
+            // "4": "📒",
+            // "5": "🎵",
+            "urgent": "",
+            "active": "",
+            "focused": "",
+            "default": ""
+        },
+        "persistent_workspaces": {
+            "*": 1
+        }
+    },
+    "hyprland/window": {
+        "format": "{}"
+    },
+    "custom/weather": {
+        "tooltip": true,
+        "format": "{}",
+        "interval": 3600,
+        "exec": "~/.config/waybar/scripts/waybar-wttr.py",
+        "return-type": "json"
+    },
+    "custom/moon": {
+        "format": "{}",
+        "interval": 3600,
+        "exec": "moon"
+    },
+    "custom/wall":{
+        "format": "{}",
+        "interval":60,
+        "exec":"r-wall & ",
+        "format-alt":"r-wall &"
+    },
+    "custom/audiomixer": {
+        "exec": "~/.config/waybar/scripts/custom_audiomixer.sh", // Path to your script
+        "interval": 5, // Update interval in seconds (optional)
+        // "return-type": "json", // If your script outputs JSON
+        "format": "<span>\uf144</span>", // How to display the output (if not using JSON format)
+        "on-click": "pavucontrol", // Command on click (optional)
+        "tooltip": false // Show tooltip with full output (optional)
+    },
+    "custom/temperature": {
+        "tooltip": true,
+        "format": " {}",
+        "interval": 30,
+        "exec": "cpu"
+    },
+    "memory": {
+        "tooltip": true,
+        "format": "  {}%",
+        "interval": 5,
+        "exec": "memory"
+    },
+    "tray": {
+        "icon-size": 18,
+        "spacing": 10
+    },
+    "clock": {
+        "timezone": "Europe/Minsk",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%Y-%m-%d}"
+        //"time-zone": "Europe/Minsk",
+        // "format": "{: %I:%M %p  %a, %b %e}",
+        // "tooltip-format": "<big>{:%Y %B}</big>\n<tt>{calendar}</tt>"
+    },
+    "backlight": {
+        // "device": "intel_backlight",
+        "format": "{icon} {percent}%",
+        "format-icons": [
+            "☯"
+        ],
+        // "format-icons": [
+        //     "🌑", "🌘", "🌗", "🌖", "🌕"
+        // ],
+        "on-scroll-up": "brightnessctl -q set 1%+",
+        "on-scroll-down": "brightnessctl -q set 1%-"
+    },
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 40,
+            "critical": 30
+        },
+        "format": "{icon} {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-alt": "{time} {icon}",
+        "format-icons": [
+            "󰂎",
+            "󰁺",
+            "󰁻",
+            "󰁼",
+            "󰁽",
+            "󰁾",
+            "󰁿",
+            "󰂀",
+            "󰂁",
+            "󰂂",
+            "󰁹"
+        ]
+    },
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "tooltip": true,
+        "format-muted": " Muted",
+        "on-click": "pamixer -t",
+        "on-scroll-up": "pamixer -i 5",
+        "on-scroll-down": "pamixer -d 5",
+        "scroll-step": 100,
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": [
+                "",
+                "",
+                ""
+            ]
+        }
+    },
+    "pulseaudio#microphone": {
+        "format": "{format_source}",
+        "format-source": " {volume}%",
+        "format-source-muted": " Muted",
+        "on-click": "pamixer --default-source -t",
+        "on-scroll-up": "pamixer --default-source -i 5",
+        "on-scroll-down": "pamixer --default-source -d 5",
+        // "on-click": "pamixer --source 60 -t",
+        // "on-scroll-up": "pamixer --source -i 5",
+        // "on-scroll-down": "pamixer --source -d 5",
+        "scroll-step": 5
+    },
+    "audiomixer": {
+        "format": "🎵{player_icon} 1",
+        "format-paused": "{status_icon}",
+        "player-icons": { 
+            "default": "\uf28b",
+            "mpv": "🎵"
+        },
+        "status-icons": {
+            "paused": "\uf144"
+        },
+        "on-click": "pavucontrol",
+        "max-length": 1000,
+        "interval": 10
+    },
+    "network": {
+        "format-wifi": "  {signalStrength}%",
+        "format-ethernet": "{ipaddr}/{cidr}",
+        "tooltip-format": "{essid} - {ifname} via {gwaddr}",
+        "format-linked": "{ifname} (No IP)",
+        "format-disconnected": "Disconnected ⚠",
+        "format-alt": "{ifname}:{essid} {ipaddr}/{cidr}"
+    },
+    "bluetooth": {
+        "format": " {status}",
+        "format-disabled": "", // an empty format will hide the module
+        "format-connected": " {num_connections}",
+        "tooltip-format": "{device_alias}",
+        "tooltip-format-connected": " {device_enumerate}",
+        "tooltip-format-enumerate-connected": "{device_alias}"
+    },
+    "custom/notification": {
+        "tooltip": false,
+        "format": "{icon}",
+        "format-icons": {
+            //"notification": "<span foreground='red'><sup></sup></span>",
+            "none": "",
+            //"dnd-notification": "<span foreground='red'><sup></sup></span>",
+            "dnd-none": "",
+            //"inhibited-notification": "<span foreground='red'><sup></sup></span>",
+            "inhibited-none": "",
+            //"dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+            "dnd-inhibited-none": ""
+        },
+        "return-type": "json",
+        "exec-if": "which swaync-client",
+        "exec": "swaync-client -swb",
+        "on-click": "swaync-client -t -sw",
+        "on-click-right": "swaync-client -d -sw",
+        "escape": true
+    },
+    "mpd": {
+        "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ",
+        "format-disconnected": "Disconnected ",
+        "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped ",
+        "interval": 2,
+        "consume-icons": {
+            "on": " " // Icon shows only when "consume" is on
+        },
+        "random-icons": {
+            "off": "<span color='#f53c3c'></span> ", // Icon grayed out when "random" is off
+            "on": " "
+        },
+        "repeat-icons": {
+            "on": " "
+        },
+        "single-icons": {
+            "on": "1 "
+        },
+        "state-icons": {
+            "paused": "",
+            "playing": ""
+        },
+        "tooltip-format": "MPD (connected)",
+        "tooltip-format-disconnected": "MPD (disconnected)"
+    }
+}
