@@ -69,6 +69,11 @@ backup_and_link ~/dotfiles/ncmpcpp ~/.config/ncmpcpp
 backup_and_link ~/dotfiles/wofi ~/.config/wofi
 backup_and_link ~/dotfiles/waybar ~/.config/waybar
 backup_and_link ~/dotfiles/swaync ~/.config/swaync
+backup_and_link ~/dotfiles/OpenTabletDriver ~/.config/OpenTabletDriver
+
+backup_and_link ~/dotfiles/user-dirs.dirs ~/.config/user-dirs.dirs
+
+backup_and_link ~/dotfiles/wallpapers ~/.config/wallpapers
 
 echo
 echo "Done! Dotfiles installed."
