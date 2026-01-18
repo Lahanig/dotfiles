@@ -14,7 +14,7 @@ I will not ensure that this script works properly, or even at all.
 So use it at your own risk.  
 
 ```bash
-git clone https://github.com/starrieste/dotfiles ~/dotfiles
+git clone https://github.com/Lahanig/dotfiles ~/dotfiles
 cd ~/dotfiles
 ./install.sh
 ```
