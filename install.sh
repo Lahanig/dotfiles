@@ -61,6 +61,8 @@ backup_and_link() {
 echo "Installing dotfiles..."
 echo
 
+./install-sddm-theme.sh
+
 backup_and_link ~/dotfiles/fastfetch ~/.config/fastfetch
 backup_and_link ~/dotfiles/hypr ~/.config/hypr
 backup_and_link ~/dotfiles/kitty ~/.config/kitty
@@ -74,6 +76,8 @@ backup_and_link ~/dotfiles/OpenTabletDriver ~/.config/OpenTabletDriver
 backup_and_link ~/dotfiles/user-dirs.dirs ~/.config/user-dirs.dirs
 
 backup_and_link ~/dotfiles/wallpapers ~/wallpapers
+# sudo mkdir -p /boot/grub/themes/
+# sudo backup_and_link ~/home/kaibi/dotfiles/grub-theme /boot/grub/themes/
 backup_and_link ~/dotfiles/scripts ~/scripts
 backup_and_link ~/dotfiles/.icons ~/.icons
 
