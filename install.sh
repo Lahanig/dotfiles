@@ -61,6 +61,8 @@ backup_and_link() {
 echo "Installing dotfiles..."
 echo
 
+sudo mkdir wallpapers 
+
 backup_and_link ~/dotfiles/fastfetch ~/.config/fastfetch
 backup_and_link ~/dotfiles/hypr ~/.config/hypr
 backup_and_link ~/dotfiles/kitty ~/.config/kitty
