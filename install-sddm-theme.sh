@@ -10,5 +10,6 @@ Current=sddm-astronaut-theme" | sudo tee /etc/sddm.conf
 echo "[General]
 InputMethod=qtvirtualkeyboard" | sudo tee /etc/sddm.conf.d/virtualkbd.conf
 
+sudo cp -f ~/dotfiles/wallpapers/sddm/ngnl_wallpaper.png /usr/share/sddm/themes/sddm-astronaut-theme/Backgrounds/
 sudo cp -f ~/dotfiles/ngnl.conf /usr/share/sddm/themes/sddm-astronaut-theme/Themes/
 sudo mv -f ~/dotfiles/metadata.desktop /usr/share/sddm/themes/sddm-astronaut-theme/metadata.desktop
