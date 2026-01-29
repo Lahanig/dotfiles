@@ -85,4 +85,3 @@ echo
 echo "Done! Dotfiles installed."
 
 ./install-pkgs.sh
-./install-sddm-theme.sh

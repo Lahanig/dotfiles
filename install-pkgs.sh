@@ -7,7 +7,7 @@ echo
 echo 'Installing pkgs...'
 echo
 
-sudo pacman -S sddm uwsm hyprland hyprpaper swaync mpd fastfetch ncmpcpp wofi waybar kitty hyprshot resources nemo nemo-fileroller brightnessctl nwg-look code gedit imagemagick swaybg
+sudo pacman -S sddm uwsm hyprland hyprpaper swaync mpd fastfetch ncmpcpp wofi waybar kitty hyprshot resources nemo nemo-fileroller brightnessctl nwg-look code gedit imagemagick swaybg yazi loupe
 
 sudo systemctl enable sddm
 xdg-mime default nemo.desktop inode/directory application/x-gnome-saved-search # Set Nemo as default file browser
@@ -28,6 +28,8 @@ echo 'Installing theme'
 echo
 
 yay -S tokyonight-gtk-theme-git 
+
+./install-sddm-theme.sh
 
 echo 
 echo 'Done! Pkgs are installed.'
