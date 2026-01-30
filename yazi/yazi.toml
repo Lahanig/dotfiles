@@ -2,6 +2,40 @@
 show_hidden = true
 
 [opener]
+run-exec = [
+	{ run = "exec %s", orphan = true, for = "linux" }
+]
+
+run-exec-py = [
+	{ run = "exec python3 %s", orphan = true, for = "linux" }
+]
+
+run-terminal = [
+	{ run = "kitty %s", otphan = true, for = "linux" }
+]
+
+run-terminal-py = [
+	{ run = "kitty python3 %s", otphan = true, for = "linux" }
+]
+
 edit = [
 	{ run = "nvim %s", block = true, for = "unix" }
 ]
+
+open = [
+	{ run = "xdg-open %s", desc = "Open" },
+]
+
+[open]
+prepend_rules = [
+	{ url = "*.sh", use = ["edit", "run-terminal", "run-exec", "reveal"]},
+	{ url = "*.appImage", use = "run-exec" },
+	{ url = "*.py", use = ["edit", "run-terminal-py", "run-exec-py", "reveal"]},
+]
+
+#rules = [
+#	{ url = "*", use = "open" },
+#	{ mime = "text/*", [use = "edit", "open"] },
+#	{ mime = "video/*", use = "play" },
+#	{ mime = "application/json", use = "edit" },	
+#]
