@@ -70,6 +70,9 @@ backup_and_link ~/dotfiles/mpd ~/.config/mpd
 backup_and_link ~/dotfiles/ncmpcpp ~/.config/ncmpcpp
 backup_and_link ~/dotfiles/wofi ~/.config/wofi
 backup_and_link ~/dotfiles/waybar ~/.config/waybar
+backup_and_link ~/dotfiles/fish ~/.config/fish
+backup_and_link ~/dotfiles/yazi ~/.config/yazi
+backup_and_link ~/dotfiles/nvim ~/.config/nvim
 backup_and_link ~/dotfiles/swaync ~/.config/swaync
 backup_and_link ~/dotfiles/OpenTabletDriver ~/.config/OpenTabletDriver
 

@@ -10,3 +10,9 @@ foo.*
 *.log
 data
 push.sh
+
+# fish
+fish_variables*
+fish/completions/
+functions/
+conf.d/

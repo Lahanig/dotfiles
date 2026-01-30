@@ -3,5 +3,5 @@ show_hidden = true
 
 [opener]
 edit = [
-	{ run = "nano %s", block = true, for = "unix" }
+	{ run = "nvim %s", block = true, for = "unix" }
 ]
