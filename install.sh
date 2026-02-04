@@ -84,6 +84,7 @@ backup_and_link ~/dotfiles/wallpapers ~/wallpapers
 backup_and_link ~/dotfiles/scripts ~/scripts
 backup_and_link ~/dotfiles/.icons ~/.icons
 
+mkdir ~/.local/bin/
 ln -s ~/dotfiles/scripts/bash/ bash-scripts
 mv ./bash-scripts ~/.local/bin/
 
