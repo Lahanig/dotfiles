@@ -85,6 +85,7 @@ backup_and_link ~/dotfiles/scripts ~/scripts
 backup_and_link ~/dotfiles/.icons ~/.icons
 
 mkdir ~/.local/bin/
+fish_add_path ~/.local/bin/
 ln -s ~/dotfiles/scripts/bash/ bash-scripts
 mv ./bash-scripts ~/.local/bin/
 
