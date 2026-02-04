@@ -84,6 +84,9 @@ backup_and_link ~/dotfiles/wallpapers ~/wallpapers
 backup_and_link ~/dotfiles/scripts ~/scripts
 backup_and_link ~/dotfiles/.icons ~/.icons
 
+ln -s ~/dotfiles/scripts/bash/ bash-scripts
+mv ./bash-scripts ~/.local/bin/
+
 echo
 echo "Done! Dotfiles installed."
 
