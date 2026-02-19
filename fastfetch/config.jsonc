@@ -4,7 +4,7 @@
   "logo": {
     "type": "auto",
     "width": 22,
-    "source": "/home/kaibi/wallpapers/zsh/wp3.png",
+    "source": "$HOME/wallpapers/zsh/wp3.png",
     "padding": {
       "top": 2,
       "right": 3,

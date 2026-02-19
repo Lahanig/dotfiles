@@ -24,7 +24,7 @@
     ],
     "modules-right": [
         "network",
-        //"bluetooth",
+        // "bluetooth",
         "hyprland/language",
         "custom/temperature",
         "memory",
