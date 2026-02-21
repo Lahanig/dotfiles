@@ -194,8 +194,8 @@ tooltip {
 #bluetooth {
     /* color: #89b4fa; */
     color: #cba6f7;
-    border-radius: 0px 10px 10px 0px;
-    margin-right: 10px
+    border-radius: 0px 0px 0px 0px;
+    margin-right: 0px
 } 
 
 #pulseaudio {
