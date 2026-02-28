@@ -2,7 +2,7 @@
     border: none;
     border-radius: 0;
     
-    font-family: "JetBrains Mono";
+    font-family: "JetBrainsMono Nerd Font", "Font Awesome 6 Free", "Symbols Nerd Font", sans-serif;
     font-weight: bold;
     font-size: 16px;
     min-height: 0;
@@ -102,7 +102,6 @@ tooltip {
     border-radius: 10px 0px 0px 10px;
     margin-right: 0px;
     /* padding-bottom: 1px; */
-    /* font-family: "Noto Emoji"; */
 }
 
 #memory span {
