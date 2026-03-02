@@ -7,15 +7,15 @@ echo
 echo 'Installing pkgs...'
 echo
 
-sudo pacman -S sddm uwsm hyprland hyprpaper swaync mpd quodlibet nvim fish fastfetch ncmpcpp wofi waybar kitty hyprshot resources nemo nemo-fileroller brightnessctl nwg-look code gedit imagemagick swaybg yazi loupe
+sudo pacman -S network-manager-applet sddm uwsm hyprland hyprpaper swaync mpd quodlibet nvim fish fastfetch ncmpcpp wofi waybar kitty hyprshot resources nemo nemo-fileroller brightnessctl nwg-look code gedit imagemagick swaybg yazi loupe
 
 sudo systemctl enable sddm
 xdg-mime default nemo.desktop inode/directory application/x-gnome-saved-search # Set Nemo as default file browser
-gsettings set org.cinnamon.desktop.default-applications.terminal exec kitty # Change the default terminal emulator for Nemo
+gsettings set org.cinnamon.desktop.default-applications.terminal exec kitty    # Change the default terminal emulator for Nemo
 
 yay -S opentabletdriver protonplus
 
-echo 
+echo
 echo 'Installing fonts'
 echo
 
@@ -23,14 +23,14 @@ sudo pacman -S ttf-jetbrains-mono ttf-font-awesome ttf-indic-otf ttf-arphic-umin
 
 yay -S otf-openmoji ttf-symbola-free ttf-twemoji ttf-joypixels
 
-echo 
+echo
 echo 'Installing theme'
 echo
 
-yay -S tokyonight-gtk-theme-git 
+yay -S tokyonight-gtk-theme-git
 
 ./install-sddm-theme.sh
 
-echo 
+echo
 echo 'Done! Pkgs are installed.'
 echo
