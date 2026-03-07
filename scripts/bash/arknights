@@ -1,0 +1,5 @@
+!/usr/bin/bash
+
+gamescope -e -W 1280 -H 720 -r 60 -- waydroid show-full-ui
+# gamescope -e --force-windows-fullscreen -- waydroid show-full-ui
+# gamescope -e --force-windows-fullscreen -- waydroid app launch com.YoStarEN.Arknights
