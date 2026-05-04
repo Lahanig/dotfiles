@@ -1,5 +1,5 @@
 {
-  "Revision": "0.6.6.2",
+  "Revision": "0.6.7",
   "Profiles": [
     {
       "Tablet": "Wacom CTL-472",
@@ -13,39 +13,43 @@
           "Path": "TemporalResampler",
           "Settings": [
             {
-              "Property": "extraFrames",
-              "Value": true
-            },
-            {
-              "Property": "loggingEnabled",
-              "Value": false
-            },
-            {
-              "Property": "latency",
-              "Value": 0.1
-            },
-            {
-              "Property": "Frequency",
-              "Value": 1000.0
-            },
-            {
-              "Property": "reverseSmoothing",
-              "Value": 0.43
-            },
-            {
               "Property": "frameShift",
               "Value": 0.6
             },
             {
               "Property": "followRadius",
               "Value": 0.1
+            },
+            {
+              "Property": "latency",
+              "Value": 0.1
+            },
+            {
+              "Property": "reverseSmoothing",
+              "Value": 0.43
+            },
+            {
+              "Property": "extraFrames",
+              "Value": false
+            },
+            {
+              "Property": "loggingEnabled",
+              "Value": false
+            },
+            {
+              "Property": "Frequency",
+              "Value": 1000.0
             }
           ],
-          "Enable": true
+          "Enable": false
         },
         {
           "Path": "TabletDriverFilters.Devocub.Antichatter",
           "Settings": [
+            {
+              "Property": "Latency",
+              "Value": 0.2
+            },
             {
               "Property": "AntichatterStrength",
               "Value": 3.0
@@ -56,11 +60,15 @@
             },
             {
               "Property": "AntichatterOffsetX",
-              "Value": null
+              "Value": 0.0
             },
             {
               "Property": "AntichatterOffsetY",
               "Value": 1.0
+            },
+            {
+              "Property": "PredictionEnabled",
+              "Value": false
             },
             {
               "Property": "PredictionStrength",
@@ -79,16 +87,8 @@
               "Value": 0.3
             },
             {
-              "Property": "PredictionEnabled",
-              "Value": false
-            },
-            {
               "Property": "Frequency",
               "Value": 1000.0
-            },
-            {
-              "Property": "Latency",
-              "Value": 0.2
             }
           ],
           "Enable": true
@@ -151,8 +151,10 @@
         "MouseButtons": [],
         "MouseScrollUp": null,
         "MouseScrollDown": null,
+        "WheelBindings": [],
         "DisablePressure": false,
-        "DisableTilt": false
+        "DisableTilt": false,
+        "EnableDragBindings": false
       }
     }
   ],
