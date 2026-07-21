@@ -90,6 +90,7 @@ mkdir ~/.local/bin/
 ln -s ~/dotfiles/scripts/bash/ bash-scripts
 mv ./bash-scripts ~/.local/bin/
 fish_add_path ~/.local/bin/bash-scripts/
+fish_add_path ~/scripts/bash/
 
 echo
 echo "Done! Dotfiles installed."
