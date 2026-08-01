@@ -21,24 +21,24 @@
               "Value": 0.1
             },
             {
-              "Property": "latency",
-              "Value": 0.1
-            },
-            {
-              "Property": "reverseSmoothing",
-              "Value": 0.43
-            },
-            {
-              "Property": "extraFrames",
-              "Value": false
-            },
-            {
               "Property": "loggingEnabled",
               "Value": false
             },
             {
               "Property": "Frequency",
               "Value": 1000.0
+            },
+            {
+              "Property": "extraFrames",
+              "Value": true
+            },
+            {
+              "Property": "latency",
+              "Value": 0.2
+            },
+            {
+              "Property": "reverseSmoothing",
+              "Value": 0.5
             }
           ],
           "Enable": true
