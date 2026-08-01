@@ -11,7 +11,7 @@ local browser = "zen-browser"
 -- Example binds, see https://wiki.hyprland.org/Configuring/Binds/ for more
 -- hl.bind("F4", hl.dsp.exec_cmd("~/.config/hypr/autoclick_r.sh"), { non_consuming = true, ignore_mods = true })
 hl.bind(mainMod .. " + Q", hl.dsp.exec_cmd(terminal))
--- hl.bind("SUPER CTRL ALT" .. " + M", hl.dsp.exec_cmd("$terminal python3 ~/scripts/python/shutdown.py"))
+hl.bind("SUPER + CTRL + ALT" .. " + M", hl.dsp.exec_cmd(terminal .. " python3 ~/scripts/python/shutdown.py"))
 hl.bind(mainMod .. " + C", hl.dsp.window.close())
 hl.bind(mainMod .. " + SHIFT + M", hl.dsp.exit())
 -- bind = $mainMod, M, exec, uwsm stop
