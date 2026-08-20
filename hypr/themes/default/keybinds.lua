@@ -13,7 +13,7 @@ local browser = "zen-browser"
 hl.bind(mainMod .. " + Q", hl.dsp.exec_cmd(terminal))
 hl.bind("SUPER + CTRL + ALT" .. " + M", hl.dsp.exec_cmd(terminal .. " python3 ~/scripts/python/shutdown.py"))
 hl.bind(mainMod .. " + C", hl.dsp.window.close())
-hl.bind(mainMod .. " + SHIFT + M", hl.dsp.exit())
+-- hl.bind(mainMod .. " + SHIFT + M", hl.dsp.exit())
 -- bind = $mainMod, M, exec, uwsm stop
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))

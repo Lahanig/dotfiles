@@ -1,0 +1,9 @@
+[[manager.prepend_keymap]]
+on = [ "y" ]
+run = [ "plugin clipboard --args=copy", "yank" ]
+desc = "Copy selection to system clipboard and yank"
+
+[[manager.prepend_keymap]]
+on = [ "p" ]
+run = [ "plugin clipboard --args=paste" ]
+desc = "Paste files from system clipboard"
