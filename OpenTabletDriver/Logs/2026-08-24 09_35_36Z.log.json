@@ -5895,3 +5895,59 @@
   "Level": 0,
   "Notification": false
 },
+{
+  "Time": "2026-08-27T18:44:05.1649974+03:00",
+  "Group": "AssemblyLoadContext.Unloading",
+  "Message": "Terminating daemon..",
+  "StackTrace": null,
+  "Level": 1,
+  "Notification": false
+},
+{
+  "Time": "2026-08-27T18:44:05.1812367+03:00",
+  "Group": "closeDaemon",
+  "Message": "Waiting for daemon to terminate",
+  "StackTrace": null,
+  "Level": 1,
+  "Notification": false
+},
+{
+  "Time": "2026-08-27T18:44:05.2641608+03:00",
+  "Group": "TypeInitializationException",
+  "Message": "The type initializer for 'StreamJsonRpc.JsonMessageFormatter' threw an exception.",
+  "StackTrace": "   at StreamJsonRpc.JsonMessageFormatter..ctor()\n   at StreamJsonRpc.JsonRpc..ctor(Stream sendingStream, Stream receivingStream, Object target)\n   at OpenTabletDriver.Desktop.RPC.RpcHost`1.RespondToRpcRequestAsync(T host, NamedPipeServerStream stream, CancellationToken ct)",
+  "Level": 3,
+  "Notification": false
+},
+{
+  "Time": "2026-08-27T18:44:05.2730477+03:00",
+  "Group": "FileNotFoundException",
+  "Message": "Could not load file or assembly 'System.Text.Encoding.Extensions, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'. The system cannot find the file specified.\n",
+  "StackTrace": null,
+  "Level": 3,
+  "Notification": false
+},
+{
+  "Time": "2026-08-27T18:44:05.273289+03:00",
+  "Group": "IPC",
+  "Message": "Disconnected from a client.",
+  "StackTrace": null,
+  "Level": 0,
+  "Notification": false
+},
+{
+  "Time": "2026-08-27T18:44:05.2784565+03:00",
+  "Group": "ProgramMain",
+  "Message": "Daemon gracefully stopped",
+  "StackTrace": null,
+  "Level": 1,
+  "Notification": false
+},
+{
+  "Time": "2026-08-27T18:44:05.2814304+03:00",
+  "Group": "closeDaemon",
+  "Message": "Waiting for daemon finished",
+  "StackTrace": null,
+  "Level": 1,
+  "Notification": false
+},

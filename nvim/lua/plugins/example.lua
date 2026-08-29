@@ -127,7 +127,7 @@ return {
         "lua",
         "markdown",
         "markdown_inline",
-        "python",
+        -- "python",
         "query",
         "regex",
         "tsx",
