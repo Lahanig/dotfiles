@@ -7,7 +7,7 @@ echo
 echo 'Installing pkgs...'
 echo
 
-sudo pacman -S network-manager-applet sddm uwsm hyprland webkit2gtk-4.1 webkitgtk-6.0 qt6-webview xdg-desktop-portal xdg-desktop-portal-hyprland xdg-desktop-portal-gtk xdg-desktop-portal-wlr xdg-desktop-portal-kde hyprpaper swaync mpd pamixer quodlibet nvim fish fastfetch ncmpcpp wofi waybar kitty hyprshot resources nemo nemo-fileroller brightnessctl nwg-look code gedit imagemagick swaybg yazi loupe bluez bluez-utils bluez-deprecated-tools blueman polkit-gnome
+sudo pacman -S network-manager-applet sddm uwsm hyprland webkit2gtk-4.1 lazygit python-pymysql dotnet-runtime webkitgtk-6.0 qt6-webview xdg-desktop-portal xdg-desktop-portal-hyprland xdg-desktop-portal-gtk xdg-desktop-portal-wlr xdg-desktop-portal-kde hyprpaper swaync mpd pamixer quodlibet nvim fish fastfetch ncmpcpp wofi waybar kitty hyprshot resources nemo nemo-fileroller brightnessctl nwg-look code gedit imagemagick swaybg yazi loupe bluez bluez-utils bluez-deprecated-tools blueman polkit-gnome
 
 sudo systemctl enable bluetooth.service
 
@@ -15,7 +15,7 @@ sudo systemctl enable sddm
 xdg-mime default nemo.desktop inode/directory application/x-gnome-saved-search # Set Nemo as default file browser
 gsettings set org.cinnamon.desktop.default-applications.terminal exec kitty    # Change the default terminal emulator for Nemo
 
-yay -S opentabletdriver protonplus
+yay -S sqlit opentabletdriver protonplus
 
 echo
 echo 'Installing fonts'
