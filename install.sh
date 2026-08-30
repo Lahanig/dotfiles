@@ -96,3 +96,5 @@ echo
 echo "Done! Dotfiles installed."
 
 ./install-pkgs.sh
+
+echo "exec fish" >>~/.bashrc
