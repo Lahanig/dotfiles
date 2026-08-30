@@ -95,7 +95,7 @@ mkdir ~/.local/bin/
 ln -s ~/dotfiles/scripts/bash/ bash-scripts
 mv ./bash-scripts ~/.local/bin/
 
-fish_add_path ~/.local/bin/bash-scripts/
-fish_add_path ~/scripts/bash/
+fish -c "fish_add_path \$HOME/.local/bin/bash-scripts"
+fish -c "fish_add_path \$HOME/scripts/bash/"
 
 echo "exec fish" >>~/.bashrc
